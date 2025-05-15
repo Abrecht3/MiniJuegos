@@ -6,7 +6,9 @@
     </style>
 
     <style name="Theme.MiniJuegos" parent="Base.Theme.MiniJuegos" />
-    <style name="SplashTheme" parent="Base.Theme.MiniJuegos">
+    <style name="SplashTheme" parent="Theme.MiniJuegos">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="statusBarBackground">@android:color/transparent</item>
         <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 </resources>

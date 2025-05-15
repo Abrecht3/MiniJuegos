@@ -6,30 +6,43 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo1"
+    android:background="@drawable/background_main"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/fila1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="50dp"
-        android:layout_marginHorizontal="30dp"
-        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="30dp">
 
-        <ImageButton
-            android:id="@+id/rpsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:background="@drawable/background_icon"
-            app:srcCompat="@mipmap/rockpaperscissor_foreground" />
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="30dp"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnRPS"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/todo"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/border_icon"
+                android:src="@drawable/rock_paper_scissors"
+                android:backgroundTint="@color/startrps"
+                app:tint="@color/white"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

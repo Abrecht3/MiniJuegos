@@ -3,6 +3,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!--Background-->
+    <color name="start"> #050505</color>
+    <color name="middle">#3c3c3c</color>
+    <color name="end"> #737373</color>
+
+    <color name="startrps">#033670</color>
+    <color name="middlerps"> #032d5e</color>
+    <color name="endrps"> #02244d</color>
+
     <color name="stroke_color">#2a292a</color>
+    <color name="assetRPS">#036c70</color>
 
 </resources>

@@ -5,25 +5,25 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.albrecht3.minijuegos.databinding.ActivityMainBinding
+import com.albrecht3.minijuegos.rockpaperscissors.MenuRPSActivity
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         setTheme(R.style.Base_Theme_MiniJuegos)
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
-
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         enableEdgeToEdge()
-
-        setContentView(binding.root)
+        var view = binding.root
+        setContentView(view)
 
         binding.apply {
-
-            rpsButton.setOnClickListener {
-                startActivity(Intent(this@MainActivity, RockPaperScissors::class.java))
+            btnRPS.setOnClickListener {
+                startActivity(Intent(this@MainActivity, MenuRPSActivity::class.java))
             }
         }
     }
