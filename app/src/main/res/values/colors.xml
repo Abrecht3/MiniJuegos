@@ -12,7 +12,13 @@
     <color name="middlerps"> #032d5e</color>
     <color name="endrps"> #02244d</color>
 
+    <color name="startMem">#c300ea</color>
+    <color name="middleMem">#f8e3fd</color>
+    <color name="endMem"> #ffffff</color>
+
+
     <color name="stroke_color">#2a292a</color>
     <color name="assetRPS">#036c70</color>
+    <color name="assetMem">#ea009c</color>
 
 </resources>

@@ -3,4 +3,8 @@
     <string name="todo">TODO</string>
     <string name="rps_title">Piedra papel y tijeras</string>
     <string name="play">A Jugar!!</string>
+    <string name="win">Ganaste!!!</string>
+    <string name="lose">Perdiste :(</string>
+    <string name="draw">Vuelve a intentanrlo</string>
+    <string name="title_memory">Memoria</string>
 </resources>

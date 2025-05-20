@@ -8,6 +8,45 @@
     tools:context=".rockpaperscissors.GameRPSActivity"
     android:background="@drawable/background_rps">
 
+    <ImageView
+        android:id="@+id/playCPU"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/border_icon"
+        android:backgroundTint="@color/assetRPS"
+        android:src="@drawable/fondot"
+        android:layout_marginTop="70dp"
+        android:rotation="180"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playCPU"
+        app:layout_constraintBottom_toTopOf="@+id/player1"
+        android:textColor="@color/white"
+        android:hint="@string/win"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"/>
+    <ImageView
+        android:id="@+id/player1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/border_icon"
+        android:backgroundTint="@color/assetRPS"
+        android:src="@drawable/fondot"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/optionPlay"/>
+
     <LinearLayout
         android:id="@+id/optionPlay"
         android:layout_width="match_parent"
@@ -16,7 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="60dp"
         android:layout_marginHorizontal="40dp">
 
         <ImageButton
