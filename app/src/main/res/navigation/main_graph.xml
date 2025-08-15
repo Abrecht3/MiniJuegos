@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.albrecht3.minijuegos.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/RPSFragment"
+        android:name="com.albrecht3.minijuegos.rockpaperscissors.RPSFragment"
+        android:label="fragment_r_p_s"
+        tools:layout="@layout/fragment_r_p_s" >
+        <action
+            android:id="@+id/action_RPSFragment_to_gameRPSActivity"
+            app:destination="@id/gameRPSActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/gameRPSActivity"
+        android:name="com.albrecht3.minijuegos.rockpaperscissors.GameRPSActivity"
+        android:label="activity_game_rps"
+        tools:layout="@layout/activity_game_rps" />
+</navigation>

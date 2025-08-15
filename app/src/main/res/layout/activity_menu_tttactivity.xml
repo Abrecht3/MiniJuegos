@@ -5,24 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_rps"
+    android:background="@color/startXO"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".rockpaperscissors.MenuRPSActivity">
+    tools:context=".tictactoe.MenuTTTActivity">
 
     <TextView
-        android:id="@+id/rpsTitle"
+        android:id="@+id/XOTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="60dp"
         android:gravity="center"
-        android:text="@string/rps_title"
+        android:text="@string/tic_tac_toe_title"
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <ImageView
-        android:id="@+id/iconRPS"
+        android:id="@+id/XOicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
@@ -30,16 +29,16 @@
         android:adjustViewBounds="true"
         android:padding="90dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/rock_paper_scissors"
+        android:src="@drawable/tic_tac_toe"
         app:tint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/playRPS"
+        android:id="@+id/playXO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginBottom="80dp"
-        android:backgroundTint="@color/assetRPS"
+        android:backgroundTint="@color/assetXO"
         android:gravity="center"
         android:text="@string/play"
         android:textColor="@color/white"

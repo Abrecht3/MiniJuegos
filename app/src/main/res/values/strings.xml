@@ -7,4 +7,8 @@
     <string name="lose">Perdiste :(</string>
     <string name="draw">Vuelve a intentanrlo</string>
     <string name="title_memory">Memoria</string>
+    <string name="tic_tac_toe_title">Tic-Tac-Toe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleTTT">Turno X</string>
 </resources>

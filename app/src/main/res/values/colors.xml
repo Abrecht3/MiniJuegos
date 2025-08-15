@@ -16,9 +16,12 @@
     <color name="middleMem">#f8e3fd</color>
     <color name="endMem"> #ffffff</color>
 
+    <color name="startXO">#8859bd</color>
+
 
     <color name="stroke_color">#2a292a</color>
     <color name="assetRPS">#036c70</color>
     <color name="assetMem">#ea009c</color>
+    <color name="assetXO">#8fbd59</color>
 
 </resources>
