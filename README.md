@@ -5,6 +5,7 @@
 <p>El listado de juegos se ira actualizando </p>
 
 <p>1 Piedra papel y tijeras </p>
+<p align="center"><img src="Screenshots/rps1.jpg" height=300/><img src="Screenshots/rps2.jpg" height=300/><img src="Screenshots/rps3.jpg" height=300/>
 <p>2 Gato "Tic-Tac-Toe, Tres en raya" </p>
 <p>3 en desarrollo ... </p>
 

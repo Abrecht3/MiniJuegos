@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_memory"
-    tools:context=".memory.MenuMemory">
+    tools:context=".memory_sequence.MenuSimon">
 
     <TextView
         android:id="@+id/rpsTitle"

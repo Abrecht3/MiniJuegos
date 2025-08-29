@@ -13,13 +13,16 @@
         android:theme="@style/Theme.MiniJuegos"
         tools:targetApi="31">
         <activity
+            android:name=".memory.MemoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".tictactoe.MenuTTTActivity"
             android:exported="false" />
         <activity
             android:name=".tictactoe.TicTacToeActivity"
             android:exported="false" />
         <activity
-            android:name=".memory.MenuMemory"
+            android:name=".memory_sequence.MenuSimon"
             android:exported="false" />
         <activity
             android:name=".rockpaperscissors.GameRPSActivity"

@@ -1,4 +1,4 @@
-package com.albrecht3.minijuegos.memory
+package com.albrecht3.minijuegos.memory_sequence
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,7 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.albrecht3.minijuegos.R
 
-class MenuMemory : AppCompatActivity() {
+class MenuSimon : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.albrecht3.minijuegos.databinding.ActivityMainBinding
-import com.albrecht3.minijuegos.memory.MenuMemory
+import com.albrecht3.minijuegos.memory_sequence.MenuSimon
 import com.albrecht3.minijuegos.rockpaperscissors.MenuRPSActivity
 import com.albrecht3.minijuegos.tictactoe.MenuTTTActivity
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
             btnXO.setOnClickListener { navigateToTicTacToe() }
 
-            btnMem.setOnClickListener { navigateToMemory() }
+            btnMemSequence.setOnClickListener { navigateToMemory() }
         }
     }
 
@@ -46,6 +46,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun navigateToMemory() {
-        startActivity(Intent(this@MainActivity, MenuMemory::class.java))
+        startActivity(Intent(this@MainActivity, MenuSimon::class.java))
     }
 }

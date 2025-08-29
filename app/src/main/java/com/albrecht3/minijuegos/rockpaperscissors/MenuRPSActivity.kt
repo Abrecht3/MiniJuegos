@@ -12,14 +12,19 @@ class MenuRPSActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuRpsBinding.inflate(layoutInflater)
-        val view=binding.root
+        val view = binding.root
         enableEdgeToEdge()
         setContentView(view)
 
-        binding.apply {
-            playRPS.setOnClickListener {
-                startActivity(Intent(this@MenuRPSActivity, GameRPSActivity::class.java))
-            }
-        }
+        initButtons()
+
+    }
+
+    private fun initButtons() {
+        binding.playRPS.setOnClickListener { startGame() }
+    }
+
+    private fun startGame() {
+        startActivity(Intent(this@MenuRPSActivity, GameRPSActivity::class.java))
     }
 }

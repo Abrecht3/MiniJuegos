@@ -1,81 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_main"
+    android:paddingTop="30dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/row1"
-        android:layout_width="120dp"
-        android:layout_height="match_parent"
-        android:layout_marginVertical="60dp"
-        android:layout_marginStart="20dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/row2">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btnMemory"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/border_icon"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/memory"
+            app:tint="@color/startrps" />
 
         <ImageButton
             android:id="@+id/btnRPS"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/todo"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
             android:background="@drawable/border_icon"
+            android:padding="10dp"
+            android:scaleType="centerInside"
             android:src="@drawable/rock_paper_scissors"
-            android:backgroundTint="@color/startrps"
-            app:tint="@color/white"/>
+            app:tint="@color/startrps" />
 
         <ImageButton
             android:id="@+id/btnXO"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/todo"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="30dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
             android:background="@drawable/border_icon"
+            android:padding="10dp"
+            android:scaleType="centerInside"
             android:src="@drawable/tic_tac_toe"
-            android:backgroundTint="@color/startXO"
-            app:tint="@color/white"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/row2"
-        android:layout_width="120dp"
-        android:layout_height="match_parent"
-        android:layout_marginVertical="60dp"
-        android:layout_marginEnd="20dp"
-        android:orientation="vertical"
-        android:gravity="center_vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/row1">
+            app:tint="@color/startrps" />
 
         <ImageButton
-            android:id="@+id/btnMem"
+            android:id="@+id/btnMemSequence"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/todo"
-            android:padding="10dp"
-            android:scaleType="fitCenter"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
             android:background="@drawable/border_icon"
-            android:src="@drawable/memory"
-            android:backgroundTint="@color/startMem"
-            app:tint="@color/white"/>
-    </LinearLayout>
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/simon"
+            />
+
+        <ImageButton
+            android:id="@+id/btnPendiente"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/border_icon"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/fondot"
+            app:tint="@color/startrps" />
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
