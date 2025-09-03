@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/background_memory"
+    tools:context=".memory_sequence.MenuSimon">
+
+    <TextView
+        android:id="@+id/titleSimon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_memory"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iconSimon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/simon"
+        android:padding="90dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toBottomOf="@+id/titleSimon"
+        app:layout_constraintBottom_toTopOf="@+id/playSimon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginVertical="30dp"
+        android:scaleType="fitCenter"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/playSimon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/play"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/assetMem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconSimon"
+        android:layout_marginBottom="80dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

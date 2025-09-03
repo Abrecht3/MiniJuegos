@@ -24,4 +24,11 @@
     <color name="assetMem">#ea009c</color>
     <color name="assetXO">#8fbd59</color>
 
+    <color name="yellow_c">#FFC107</color>
+    <color name="yellow">#FFEB3B</color>
+
+    <color name="green_c">#4CAF50</color>
+    <color name="green">#8BC34A</color>
+    <color name="red">#F20B0B</color>
+
 </resources>

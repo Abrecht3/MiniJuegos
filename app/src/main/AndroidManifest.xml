@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MiniJuegos"
         tools:targetApi="31">
         <activity
+            android:name=".memory_sequence.GameSimonActivity"
+            android:exported="false" />
+        <activity
             android:name=".memory.MemoryActivity"
             android:exported="false" />
         <activity

@@ -6,7 +6,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.albrecht3.minijuegos.R
 import com.albrecht3.minijuegos.databinding.ActivityGameRpsBinding
-import kotlinx.coroutines.delay
 
 class GameRPSActivity : AppCompatActivity() {
 
@@ -44,7 +43,7 @@ class GameRPSActivity : AppCompatActivity() {
 
     private fun jugadaCom(): Int {
         binding.apply {
-            val opcion: Int = ((Math.random() * 3) + 1).toInt()
+            val opcion: Int = (1..3).random()
             when (opcion) {
                 1 -> {
                     playCPU.setImageResource(R.drawable.rock)
